@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.big-div {
+    background-color: hsl(0, 0%, 55%);
+    width: 200vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 40%;
+    font-size: 3rem;
+    cursor: pointer;
+    color: hsl(0, 0%, 36%);
+    z-index: 1;
+}
+
+.test-button {
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    z-index: 1;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    color: #fff;
+}
+
+.left-arrow {
+    left: 0.5%;
+}
+
+.right-arrow {
+    right: 51%;
+}
+
+.slider {
+    background-color: hsl(239, 64%, 68%);
+    height: 75vh;
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 75vh;
+    position: relative;
+    transition: transform 0.5s ease;
+    
+}
+
+.photo-card {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or 'contain' */
+}
